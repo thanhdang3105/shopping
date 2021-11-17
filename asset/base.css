@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
+    color: #000;
+    background-color: white;
+}
+
+.row{
+    width:85%;
+    margin: 0 auto;
+    height: 100%;
+}
+:root{
+    --header-color: #659DBD;
+    --text-hover: #FBEEC1;
+    --btn-hover: #8D8741;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
