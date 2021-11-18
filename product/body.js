@@ -19,8 +19,8 @@ function body(init) {
             <span class="product">24</span>/<span class="All_product">100</span>
         </p>
     </div>
-    <div class="body_product">
-        <a href="" class="column2">
+    <div class="body_productItem">
+        <a href="item_product.html" class="column2">
             <div class="img_product">
                 <img src="./asset/img/vans.jpg" alt="product1" class="product_img">
             <img src="./asset/img/vans.jpg" alt="product1" class="product_img2">

@@ -1,11 +1,14 @@
 import {attach} from './store.js'
 import header from '../app/header.js'
 import footer from '../app/footer.js'
-import body_item from '../product/body.js'
+import body_product from '../product/body.js'
 
 attach(header,document.querySelector('.header'))
 attach(footer,document.querySelector('.footer'))
-attach(body_item,document.querySelector('.body_item'))
+if(document.querySelector('.body_product')){
+    attach(body_product,document.querySelector('.body_product'))
+}
+
 
 document.getElementById('search').onclick = () =>{
     const input_search = document.querySelector('.nav_item-search')

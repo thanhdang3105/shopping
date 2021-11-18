@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./swiper/node_modules/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="./asset/base.css">
+    <link rel="stylesheet" href="./asset/index.css">
+    <link rel="stylesheet" href="./item_product/item_product.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="body_item">
+        <div class="row">
+            <div class="item_block">
+                <div class="img_item">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img class="img_preview" src="asset/img/champion.jpg"></div>
+                            <div class="swiper-slide"><img class="img_preview" src="asset/img/Hình-phong-cảnh-Anime-scaled.jpg"></div>
+                            <div class="swiper-slide"><img class="img_preview" src="asset/img/hinh-nen-may-tinh-win-7-va-win-8-15.jpg"></div>
+                            <div class="swiper-slide"><img class="img_preview" src="asset/img/logo-thuong-hieu-bape-elle-man-2.png"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <i id="pagination_up" class="angle up icon"></i>
+                        <div class="swiper-pagination">
+                        </div>
+                        <i id="pagination_down" class="angle down icon"></i>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                  
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </div>
+                <div class="item_infomation">
+                    <h1 class="item_infomation-name">Vans Basic</h1>
+                    <p class="type_category">Danh mục: <span class="item_type-category">Logo các thương hiệu</span></p>
+                    <p class="item_infomation-price">200.000Đ</p>
+                    <label for="choose">Chọn màu:</label>
+                    <div class="choose_color" name="choose">
+                        <p id="item_black" class="item_color choose">Đen</p>
+                        <p id="item_white" class="item_color">Trắng</p>
+                    </div>
+                    <div class="item_control">
+                        <button class="add_itemtoCart">Thêm vào giỏ hàng</button>
+                        <button class="payment">Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="swiper/node_modules/swiper/swiper-bundle.js"></script>
+    <script src="./core/attach.js" type="module"></script>
+    <script type="text/javascript" src="item_product.js"></script>
+    <script>
+        const arrIMG = Array.from(document.querySelectorAll('.img_preview'))
+        const swiper = new Swiper('.swiper',{
+            slidesPerView:1,
+            effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            origin: "left center",
+            translate: ["-5%", 0, -200],
+            rotate: [0, 100, 0],
+          },
+          next: {
+            origin: "right center",
+            translate: ["5%", 0, -200],
+            rotate: [0, -100, 0],
+          },
+        },
+            allowTouchMove:false,
+            navigation:{
+                nextEl:'.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination:{
+                el:'.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return `<img src="${arrIMG[index].src}" class="${className}">`
+                },
+            }
+        });
+        const arr = document.querySelectorAll('.img_item .swiper .swiper-pagination img')
+        if(arr.length <= 4){
+            $('#pagination_up').style.opacity = '0'
+            $('#pagination_down').style.opacity = '0'
+        }
+        else{
+            $('#pagination_up').style.opacity = '1'
+            $('#pagination_down').style.opacity = '0.2'
+        }
+    </script>
+</body>
+</html>

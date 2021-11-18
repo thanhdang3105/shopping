@@ -3,7 +3,7 @@
     background: var(--header-color);
 }
 
-.body_item{
+.body_product{
     margin-top:10vh;
     padding: 2rem;
 }
@@ -36,7 +36,7 @@
     color: red;
 }
 
-.body_product{
+.body_productItem{
     display: flex;
     width: 100%;
     flex-wrap: wrap;

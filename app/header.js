@@ -5,7 +5,7 @@ function header(init) {
     return html`
     <div class="row">
         <ul class="header_nav">
-            <li class="header_nav-item"><a href="#root"><img src="./asset/img/logo-single.png" alt="Logo" class="nav_item-logo"></a>
+            <li class="header_nav-item"><a href="index.html"><img src="./asset/img/logo-single.png" alt="Logo" class="nav_item-logo"></a>
             </li>
             <li class="header_nav-item header_main-nav">
                 <a href="index.html" class="item_nav-link">Trang chủ</a>
