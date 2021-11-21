@@ -5,12 +5,13 @@ function header(init) {
     return html`
     <div class="row">
         <ul class="header_nav">
-            <li class="header_nav-item"><a href="index.html"><img src="./asset/img/logo-single.png" alt="Logo" class="nav_item-logo"></a>
+            <li class="header_nav-item"><a href="index.html"><img src="./asset/img/logo-urban-monkey-local-brand-viet-nam-streetwear.png" alt="Logo" class="nav_item-logo"></a>
             </li>
             <li class="header_nav-item header_main-nav">
                 <a href="index.html" class="item_nav-link">Trang chủ</a>
-                <div class="divitem_nav-link"><a href="product.html" class="item_nav-link">Sản phẩm<i class="angle down icon"></i></a>
+                <div class="divitem_nav-link"><a class="item_nav-link">Sản phẩm<i class="angle down icon"></i></a>
                     <ul class="link_list">
+                        <li class="link_list-item"><a href="product.html" class="link_list-itemLink">Tất cả sản phẩm</a></li>
                         <li class="link_list-item"><a href="#" class="link_list-itemLink">Logo độc quyền</a></li>
                         <li class="link_list-item"><a href="#" class="link_list-itemLink">Logo 12 con giáp</a></li>
                         <li class="link_list-item"><a href="#" class="link_list-itemLink">Logo các cung hoàng đạo</a></li>
@@ -24,7 +25,7 @@ function header(init) {
                     <a><i id="search" class="search icon"></i></a>
                     <input type="text" class="nav_item-search" placeholder="Tìm kiếm...">
                     <div class="cart_main">
-                        <a href="#"><i id="cart" class="cart icon"></i></a>
+                        <a><i id="cart" class="cart icon"></i></a>
                         <ul class="cart_list">
                             <h1 class="heading_cart-name">Giỏ Hàng</h1>
                             <div class="list_cart-item">
@@ -38,6 +39,7 @@ function header(init) {
                                             <p class="price">200.000Đ</p>
                                         </div>
                                     </div>
+                                    <i class="times icon"></i>
                                 </li>
                                 <li class="cart_item">
                                     <img src="./asset//img/champion.jpg" alt="" class="cart_item-img">

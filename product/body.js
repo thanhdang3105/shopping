@@ -19,8 +19,8 @@ function body(init) {
             <span class="product">24</span>/<span class="All_product">100</span>
         </p>
     </div>
-    <div class="body_productItem">
-        <a href="item_product.html" class="column2">
+    <form action="item_product.html" method="get" class="body_productItem">
+        <button href="item_product.html" class="column2">
             <div class="img_product">
                 <img src="./asset/img/vans.jpg" alt="product1" class="product_img">
             <img src="./asset/img/vans.jpg" alt="product1" class="product_img2">
@@ -29,7 +29,7 @@ function body(init) {
                 <h2 class="product_name">Vans Basic</h2>
                 <p class="collection_name">Logo các thương hiệu</p>
             </div>
-        </a>
+        </button>
         <a href="" class="column2">
             <div class="img_product">
                 <img src="./asset/img/puma.jpg" alt="product1" class="product_img">
@@ -260,7 +260,7 @@ function body(init) {
                 <p class="collection_name">Logo các thương hiệu</p>
             </div>
         </a>
-    </div>
+    </form>
     <ul class="product_pagination">
         <a href="" class="number_pagination">1</a>
         <a href="" class="number_pagination">2</a>

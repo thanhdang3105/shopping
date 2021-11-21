@@ -1,0 +1,26 @@
+@media (min-width:1024px) and (max-width:1200px) {
+    .main{
+        overflow-x: hidden;
+    }
+    
+    
+    .slider_banner{
+        height: 50vh;
+    }
+
+    .best_collection-title{
+        height: 5vh;
+    }
+
+    .video_colection{
+        height: 50vh;
+    }
+
+    .item_name{
+        margin: 0;
+    }
+    
+    .feedback_logo-list{
+        height: 50vh;
+    }
+}

@@ -17,6 +17,11 @@
     overflow: unset;
 }
 
+.img_item .swiper .img_preview{
+    width: 100%;
+    height: 100%;
+}
+
 .img_item .swiper .swiper-pagination{
     display: flex;
     flex-direction: column;
@@ -51,5 +56,265 @@
     bottom: -0.5rem;
     opacity: 0.2;
 }
+
+.item_infomation{
+    width: 30%;
+    padding: 2rem 0 0 0;
+}
+
+.item_infomation-name{
+    font-size:3rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 3rem;
+}
+
+.type_category{
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+}
+
+.item_type-category{
+    color: black;
+    font-weight: 500;
+}
+
+.item_infomation-price{
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.choose_color{
+    display: flex;
+}
+
+.item_infomation label,
+.item_note{
+    color: #000;
+    font-weight: bold;
+    font-size:1.6rem
+}
+
+.item_color{
+    padding: .5rem;
+    min-width: 5rem;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+.item_color:hover{
+    background-color: var(--header-color);
+    color: white;
+}
+
+.choose {
+    background-color: var(--header-color);
+    color: white;
+}
+
+.item_control{
+    display: flex;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.add_itemtoCart{
+    width: 50%;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.add_itemtoCart:hover{
+    background-color: var(--header-color);
+}
+
+.add_itemtoCart,
+.payment{
+    border: 1px solid white;
+}
+
+.payment{
+    width: 50%;
+    text-align:center;
+    color: white;
+}
+
+.text_note{
+    font-weight: 400;
+}
+
+/* ==================== Phần mô tả ================================ */
+
+.item_desc-rate--block{
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.item_desc-rate--control{
+    transform:translateY(2px);
+    position: relative;
+    z-index: 1;
+}
+
+.control_desc,
+.control_rate{
+    cursor: pointer;
+    padding:1rem;
+    min-width: 10rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.control_desc.active,
+.control_rate.active{
+    border-bottom: none;
+    background-color:white;
+}
+
+.more_desc{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    padding-top: 1rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.more_desc:hover{
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 0.5rem;
+}
+
+.item_desc-rate--body{
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.item_body-desc{
+    height: 15rem;
+}
+
+.item_body-desc{
+    padding: 1rem;
+    text-align: center;
+}
+
+.item_body-desc--text{    
+    text-align: left;
+    font-size: 2rem;
+}
+
+.item_body-desc--img{
+    width: 50%;
+}
+
+.item_body-desc--info{
+    padding: 0 25%;
+    list-style: none;
+}
+
+.body_desc-info--heading,
+.body_desc-commit--heading,
+.body_desc-contact--heading,
+.comments_heading,
+.form_comments-heading{
+    font-size: 3rem;
+}
+
+.body_desc-info--item{
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.body_desc-commit{
+    text-align: left;
+    font-size:2rem;
+}
+
+.body_desc-commit--list,
+.body_desc-contact--list{
+    list-style-type: none;   
+}
+
+.body_desc-commit--item,
+.body_desc-contact--item{
+    margin: 2rem 0;
+}
+
+.body_desc-contact--item:last-child{
+    text-align:right;
+}
+
+/* =======================comments============ */
+
+.item_body-rate{
+    padding: 1rem;
+}
+
+.send_comments{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_textarea{
+    width: 150%;
+}
+
+#text_comments{
+    max-width: 100%;
+    max-height: 10rem;
+    width: 100%;
+    height: 10rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.form_input{
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.form_input-info{
+    padding-left: 1rem;
+    display: block;
+    width: 95%;
+    height: 4rem;
+}
+
+.btn_send{
+    width: 13%;
+    height: 5rem;
+    margin-top: 2rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color:var(--header-color);
+    color: white;
+    font-weight: bold;
+}
+
+.btn_send:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+
 
 

@@ -1,13 +1,13 @@
 
 document.onscroll = () =>{
-    if(window.pageYOffset >= 550){
-            document.querySelector('.header').style.background = 'var(--header-color)'
-            document.querySelector('.header').style.animation = 'fadeIn 0.5s linear'
-    }
-    else if (window.pageYOffset == 0){
-            document.querySelector('.header').style.background = 'linear-gradient(to bottom, rgb(0,0,0),rgba(0,0,0,0.8),rgba(0,0,0,0.6), rgba(0,0,0,0.3))'
-            document.querySelector('.header').style.animation = ''
-            document.querySelector('.header').style.transition = 'all 0.3s linear'
+    if (window.pageYOffset == 0){
+        document.querySelector('.header').style.background = 'linear-gradient(to bottom, rgb(0,0,0),rgba(0,0,0,0.8),rgba(0,0,0,0.6), rgba(0,0,0,0.3))'
+        document.querySelector('.header').style.animation = ''
+        document.querySelector('.header').style.transition = 'all 0.3s linear'
+    } 
+    else if(window.pageYOffset >= 550){
+        document.querySelector('.header').style.background = 'var(--header-color)'
+        document.querySelector('.header').style.animation = 'fadeIn 0.5s linear'
     }
 }
 

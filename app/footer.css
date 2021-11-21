@@ -1,0 +1,154 @@
+.footer{
+    width: 100%;
+    background-color:var(--header-color);
+    margin:3rem 0 0;
+}
+
+.contact_us{
+    grid-area: footer1;
+}
+
+.footer_menu{
+    grid-area: footer2;
+}
+
+.footer_info{
+    grid-area: footer3;
+}
+
+
+.footer_contact{
+    padding: 3rem;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 2rem;
+    grid-template-columns: 25%;
+    grid-template-rows: auto 30% ;
+    grid-template-areas: 'footer1 footer2 footer2'
+                         'footer1 footer3 footer3';
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.footer_logo{
+    width: 100%;
+}
+
+.icon_network-list{
+    display: flex;
+    list-style: none
+}
+
+.icon_link{
+    color: #fff;
+}
+
+.icon_link:hover{
+    color: var(--text-hover);
+}
+
+.icon_network{
+    margin: 0 0.5rem;
+    font-size:2.5rem;
+    line-height:2.5rem;
+}
+
+.mail_contact{
+    margin: 1rem 0 0.5rem;
+}
+
+p.title_ads{
+    margin: 1rem 0 0;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgb(231, 231, 231);
+}
+
+.footer_menu{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid white;
+    padding-bottom: -1rem;
+}
+
+.store_location{
+    display: flex;
+    font-size:1.5rem;
+    justify-content:space-between;
+}
+
+.title_location{
+    font-size:2rem;
+}
+
+.footer_info{
+    width:100%;
+}
+
+.footer_info{
+    display: flex;
+}
+
+.policy{
+    width: 50%;
+    padding: 0 2rem 0 1rem;
+}
+
+.policy_list{
+    list-style: none;
+}
+
+.policy_item{
+    border-bottom: 1px solid #fff;
+    padding: 0.3rem 0;
+}
+
+.policy_item-link{
+    color: #fff;
+}
+
+.policy_item-link:hover{
+    color: var(--text-hover);
+}
+
+.facebook,
+.map{
+    width: 50%;
+}
+
+.facebook img{
+    width:100px;
+    height:100px;
+}
+
+.map img{
+    width: 100px;
+    height: 100px;
+}
+
+.copyright{
+    width: 100vw;
+    height: 5vh;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #1A1A1D;
+}
+
+.name_author{
+    margin: 0;
+    color: var(--text-hover);
+    font-style: oblique;
+    font-size: 1.1em;
+}
+
+
+
+@media (min-width:1024px) and (max-width:1200px) {
+    .footer_contact{
+        grid-template-rows: 20% 22% 20% 22%;
+        grid-template-areas: 
+        'footer1 footer2 footer2'
+        'footer1 footer2 footer2'
+        'footer1 footer3 footer3'
+        'footer1 footer3 footer3';
+    }
+}

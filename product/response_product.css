@@ -1,0 +1,9 @@
+@media (min-width:1024px) and (max-width:1200px){
+    .body_product{
+        margin-top: 5vh;
+    }
+    
+    .column2{
+        width: 33.3334%;
+    }
+}

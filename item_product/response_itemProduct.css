@@ -1,0 +1,50 @@
+@media (min-width:1024px) and (max-width:1200px) {
+    .body_item{
+        margin-top:5vh;
+    }
+
+    .item_block{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .item_note{
+        position: absolute;
+        top: 2rem;
+        left: 100%;
+        width: 50rem;
+    }
+
+    .item_infomation-price{
+        margin: 0;
+    }
+
+    .img_item{
+        min-height: 100%;
+        height: 100%;
+        width:100%;
+        padding: 0 0 0 9rem;
+    }
+
+    .item_infomation{
+        position: relative;
+        width: 40%;
+    }
+
+    .swiper{
+        height: 100%;
+    }
+
+    .img_item .swiper .swiper-pagination{
+        left: -8.2rem;
+        width: 8rem;
+    }
+
+    .payment{
+        font-size: 1.5rem;
+    }
+
+    .item_desc-rate--block{
+        width: 100%;
+    }
+}
