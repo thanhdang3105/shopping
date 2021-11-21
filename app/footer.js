@@ -6,7 +6,7 @@ function footer (init) {
     <div class="row">
     <div class="footer_contact">
         <div class="contact_us">
-            <a href="#root"><img src="./asset/img/logo-single.png" alt="logo" class="footer_logo"></a>
+            <a href="#root"><img src="./asset/img/logo-urban-monkey-local-brand-viet-nam-streetwear.png" alt="logo" class="footer_logo"></a>
             <h1 class="name_company">Công ty TNHH MTV DuyToo</h1>
             <div class="contact">
                 <h2 class="contact_width-network">Về chúng tôi</h2>

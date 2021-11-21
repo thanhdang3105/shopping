@@ -13,11 +13,11 @@ if(document.querySelector('.body_product')){
 document.getElementById('search').onclick = () =>{
     const input_search = document.querySelector('.nav_item-search')
     if(input_search.value == 0){
-        if(input_search.style.opacity == 0){
-            input_search.style.opacity = 1
+        if(input_search.style.display == 'none'){
+            input_search.style.display = 'block'
         }
         else{
-            input_search.style.opacity = 0
+            input_search.style.display = 'none'
         }
     }
     else{

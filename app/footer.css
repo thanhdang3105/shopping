@@ -140,15 +140,41 @@ p.title_ads{
     font-size: 1.1em;
 }
 
+/* ===================================== Response ============================================ */
 
-
-@media (min-width:1024px) and (max-width:1200px) {
+@media (min-width:768px) and (max-width:1200px) {
     .footer_contact{
-        grid-template-rows: 20% 22% 20% 22%;
+        column-gap: 2rem;
+        grid-template-rows: 20% 20% 20% 24%;
         grid-template-areas: 
         'footer1 footer2 footer2'
         'footer1 footer2 footer2'
         'footer1 footer3 footer3'
         'footer1 footer3 footer3';
+    }
+
+   
+}
+
+@media (min-width:768px) and (max-width:1023px){
+
+    .footer_contact{
+        grid-template-columns: 35%;
+    }
+    .map{
+        display: none;
+    } 
+}
+
+@media (max-width:767px) {
+    .footer_menu,
+    .footer_info{
+        display: none;
+    }
+
+    .footer_contact{
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+        grid-template-areas: 'footer1';
     }
 }

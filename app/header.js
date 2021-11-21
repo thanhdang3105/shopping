@@ -5,6 +5,7 @@ function header(init) {
     return html`
     <div class="row">
         <ul class="header_nav">
+            <li class="header_nav-item menu_mobile"><i class="bars icon"></i></li>
             <li class="header_nav-item"><a href="index.html"><img src="./asset/img/logo-urban-monkey-local-brand-viet-nam-streetwear.png" alt="Logo" class="nav_item-logo"></a>
             </li>
             <li class="header_nav-item header_main-nav">
@@ -22,7 +23,7 @@ function header(init) {
             </li>
             <li class="header_nav-item">
                 <div class="nav_item-control">
-                    <a><i id="search" class="search icon"></i></a>
+                    <a class="search" ><i id="search" class="search icon"></i></a>
                     <input type="text" class="nav_item-search" placeholder="Tìm kiếm...">
                     <div class="cart_main">
                         <a><i id="cart" class="cart icon"></i></a>

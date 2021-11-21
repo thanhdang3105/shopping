@@ -1,8 +1,7 @@
-@media (min-width:1024px) and (max-width:1200px) {
+@media (max-width:1200px) {
     .main{
         overflow-x: hidden;
     }
-    
     
     .slider_banner{
         height: 50vh;
@@ -22,5 +21,36 @@
     
     .feedback_logo-list{
         height: 50vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+
+}
+
+@media (max-width:767px) {
+    .name_store {
+        font-size:1.5rem;
+    }
+
+    .sale_title{
+        font-size: 2rem;
+    }
+
+    .btn_sale{
+        font-size: 1.2rem;
+        background-color: #fff;
+    }
+
+    .main-body .row{
+        width: 100%;
+    }
+
+    .best_collection-item{
+        width: 100%;
+    }
+
+    .best_collection-title{
+        height: 7vh;
     }
 }
