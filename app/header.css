@@ -122,6 +122,7 @@
 /*======================= Cart list================================================= */
 
 .cart_main{
+    padding-left: 50%;
     position: relative;
 }
 
@@ -410,15 +411,68 @@
         width:33.334%;
     }
 
-    .cart_list{
-        top: 5vh;
-        right: -5rem;
+    .menu_mobile-list{
+        background-color: #fff;
+        list-style: none;
         width: 100vw;
-        max-height:95vh;
+        position: fixed;
+        left: 0;
+        height: 100%;
+        top: 10vh;
+        display: none;
+    }
+    
+    .menu_mobile-item{
+        width: 100%;
+        padding: 0 2rem;
+        margin: 2rem 0;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+    }    
+
+    .mobile_nav-link{
+        padding: 0 1rem;
+        font-size:2rem;
+        line-height: 2rem;
+        color: #000;
+        font-weight: bold;
+    }
+    
+    .mobile_nav-link:hover{
+        color: grey;
+    }
+
+    .mobile_link-list{
+        list-style: none;
+        display: none;
+    }
+
+    .mobile_search #search {
+        color: black;
+    }
+
+    .mobile.nav_item-search{
+        right: 2rem;
+        display: block;
+        top: -3px;
+        width: 80%;
+        bottom: 0;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .cart_list{
+        top: 5.1vh;
+        right: -5.2rem;
+        width: 100vw;
+        max-height:85vh;
+    }
+
+    .total_price{
+        height: 3rem;
     }
 
     .list_cart-item{
-        max-height:72vh;
+        max-height:65vh;
     }
 
     .menu_mobile{
