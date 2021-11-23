@@ -19,13 +19,13 @@
 }
 
 #category{
-    border: none;
+    border: 1px solid var(--header-color);
     background-color: var(--header-color);
-    outline: none;
     border-radius:5px;
     color: white;
     padding: 0.5rem;
     font-weight: bold;
+    outline: none;
 }
 
 .body_heading-title{
@@ -47,6 +47,10 @@
     padding: 0 10px;
     margin: 10px 0;
     color: black;
+}
+
+button.column2{
+    border-radius: 1px;
 }
 
 .column2:hover{
