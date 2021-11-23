@@ -23,10 +23,8 @@
         <div class="row">
             <div class="item_block">
                 <div class="img_item">
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
+                    <div class="swiper mySwiper1">
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
                             <div class="swiper-slide"><img class="img_preview" src="asset/img/champion.jpg"></div>
                             <div class="swiper-slide"><img class="img_preview"
                                     src="asset/img/Hình-phong-cảnh-Anime-scaled.jpg"></div>
@@ -35,17 +33,19 @@
                             <div class="swiper-slide"><img class="img_preview"
                                     src="asset/img/logo-thuong-hieu-bape-elle-man-2.png"></div>
                         </div>
-                        <!-- If we need pagination -->
-                        <i id="pagination_up" class="angle up icon"></i>
-                        <div class="swiper-pagination">
-                        </div>
-                        <i id="pagination_down" class="angle down icon"></i>
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
-
-                        <!-- If we need scrollbar -->
-                        <!-- <div class="swiper-scrollbar"></div> -->
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="img_preview" src="asset/img/champion.jpg"></div>
+                            <div class="swiper-slide"><img class="img_preview"
+                                    src="asset/img/Hình-phong-cảnh-Anime-scaled.jpg"></div>
+                            <div class="swiper-slide"><img class="img_preview"
+                                    src="asset/img/hinh-nen-may-tinh-win-7-va-win-8-15.jpg"></div>
+                            <div class="swiper-slide"><img class="img_preview"
+                                    src="asset/img/logo-thuong-hieu-bape-elle-man-2.png"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="item_infomation">
@@ -84,12 +84,18 @@
     <div class="footer"></div>
     <script src="swiper/node_modules/swiper/swiper-bundle.js"></script>
     <script src="./core/attach.js" type="module"></script>
-    <script type="text/javascript" src="item_product.js"></script>
+    <script src="item_product.js"></script>
     <script>
         const arrIMG = Array.from(document.querySelectorAll('.img_preview'))
-        const swiper = new Swiper('.swiper', {
-            slidesPerView: 1,
+        var swiper = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper1", {
+            spaceBetween: 10,
             effect: "creative",
+
             creativeEffect: {
                 prev: {
                     shadow: true,
@@ -103,27 +109,14 @@
                     rotate: [0, -100, 0],
                 },
             },
-            allowTouchMove: false,
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return `<img src="${arrIMG[index].src}" class="${className}">`
-                },
-            }
+            thumbs: {
+                swiper: swiper,
+            },
         });
-        const arr = document.querySelectorAll('.img_item .swiper .swiper-pagination img')
-        if (arr.length <= 4) {
-            $('#pagination_up').style.display = 'none'
-            $('#pagination_down').style.display = 'none'
-        } else {
-            $('#pagination_up').style.opacity = '1'
-            $('#pagination_down').style.opacity = '0.2'
-        }
     </script>
 </body>
 

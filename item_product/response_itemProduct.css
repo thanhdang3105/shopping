@@ -1,4 +1,4 @@
-@media (min-width:1024px) and (max-width:1200px) {
+@media (min-width:768px) and (max-width:1200px) {
     .body_item{
         margin-top:5vh;
     }
@@ -12,7 +12,7 @@
         position: absolute;
         top: 2rem;
         left: 100%;
-        width: 50rem;
+        width: 150%;
     }
 
     .item_infomation-price{
@@ -23,7 +23,7 @@
         min-height: 100%;
         height: 100%;
         width:100%;
-        padding: 0 0 0 9rem;
+        padding: 0 0 0 0;
     }
 
     .item_infomation{
@@ -47,4 +47,85 @@
     .item_desc-rate--block{
         width: 100%;
     }
+
+    .body_desc-info--heading,
+.body_desc-commit--heading,
+.body_desc-contact--heading,
+.comments_heading,
+.form_comments-heading{
+    font-size: 2rem;
+}
+}
+
+@media (max-width:767px) {
+    .row{
+        width: 100%;
+    }
+
+    .item_block{
+        flex-direction: column;
+    }
+
+    .img_item{
+        min-height: 100%;
+        height: 100%;
+        width:100%;
+        padding: 0 0 0 0;
+    }
+
+    .item_infomation{
+        width: 100%;
+    }
+
+    .item_desc-rate--block{
+        width: 100%;
+        margin: 0;
+    }
+
+    .item_body-desc--info{
+        padding: 0 5%;
+    }
+
+    .send_comments {
+        flex-direction: column;
+    }
+
+    .form_textarea{
+        width: 100%;
+    }
+
+    .form_input{
+        margin: 0;
+    }
+
+    .form_input input{
+        width: 100%;
+    }
+
+    .btn_send{
+        width: 70%;
+        border-radius:5px;
+    }
+
+    .more_desc{
+        background-color: rgba(255, 255, 255, 0.96);
+    }
+
+    .body_desc-info--heading,
+.body_desc-commit--heading,
+.body_desc-contact--heading,
+.comments_heading,
+.form_comments-heading{
+    font-size: 2rem;
+}
+
+.item_body-desc--text,
+.body_desc-info--item,
+.body_desc-commit{
+    font-size: 1.5rem;
+}
+
+.copyright{
+    padding: 0.5rem 0;
+}
 }

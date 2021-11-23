@@ -1,26 +1,4 @@
 const $ = document.querySelector.bind(document)
-var topa = 0
-$('#pagination_up').onclick = () => {
-    if (topa >= 1360) {
-        $('#pagination_up').style.opacity = '0.2'
-    } else {
-        topa = topa + 85
-        $('.img_item .swiper .swiper-pagination').scrollTop = `${topa}`
-        $('#pagination_down').style.opacity = '1'
-    }
-}
-
-$('#pagination_down').onclick = () => {
-    if (topa <= 0) {
-        $('#pagination_down').style.opacity = '0.2'
-    } else {
-        topa = topa - 85
-        $('.img_item .swiper .swiper-pagination').scrollTop = `${topa}`
-        $('#pagination_up').style.opacity = '1'
-    }
-}
-
-
 
     const desc = `<div class="more_desc" onclick="more_desc()">Xem thêm <i class="angle double down icon"></i></div>
     <div class="item_body-desc">
@@ -93,6 +71,7 @@ $('#pagination_down').onclick = () => {
     <button class="btn_send">Gửi</button>
 </form>
 </div>`
+
     if ($('.control_desc').classList.contains('active')) {
         $('.item_desc-rate--body').innerHTML = desc
     }

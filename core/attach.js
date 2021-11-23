@@ -7,17 +7,16 @@ import body_product from '../product/body.js'
 
 const $ = document.querySelector.bind(document);
 
-// attach(header,document.querySelector('.header'))
+attach(header,document.querySelector('.header'))
 attach(footer, document.querySelector('.footer'))
 if (document.querySelector('.body_product')) {
     attach(body_product, document.querySelector('.body_product'))
 }
 
-
-document.getElementById('search').onclick = () => {
-    const input_search = document.querySelector('.nav_item-search')
+$('.search_click').onclick = () => {
+    const input_search = document.querySelector('.search_pc')
     if (input_search.value == 0) {
-        if (input_search.style.display == 'none') {
+        if (input_search.style.display == 'none' || input_search.style.display == '') {
             input_search.style.display = 'block'
         } else {
             input_search.style.display = 'none'
@@ -33,6 +32,8 @@ var isList_link = false
 $('.click_list').onclick = () => {
     isList_link = !isList_link
     $('.mobile_link-list').style.display = isList_link ? 'block' : 'none'
+    $('.click_list').classList.toggle('down',!isList_link)
+    $('.click_list').classList.toggle('up',isList_link)
 }
 
 var isMenu = false
@@ -42,10 +43,9 @@ $('.menu_mobile .bars.icon').onclick = () => {
     $('.menu_mobile-list').style.display = isMenu ? 'block' : 'none'
 }
 
-$('.click_list').onblur = () => {
-    isList_link = !isList_link
-    console.log(isList_link)
-    $('.mobile_link-list').style.display = isList_link ? 'block' : 'none'
+$('.cart.icon').onclick = () => {
+    isMenu = false
+    $('.menu_mobile-list').style.display = 'none'
 }
 
 (function () {

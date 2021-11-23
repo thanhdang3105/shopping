@@ -167,14 +167,28 @@ p.title_ads{
 }
 
 @media (max-width:767px) {
+    .footer_logo{
+        height: 45%;
+    }
+
+    .name_company{
+        margin: 0;
+    }
+
     .footer_menu,
     .footer_info{
         display: none;
     }
 
     .footer_contact{
+        height: 85vh;
+        padding-bottom: 0;
         grid-template-columns: 100%;
         grid-template-rows: 100%;
         grid-template-areas: 'footer1';
+    }
+
+    .copyright{
+        padding: 0.5rem 0;
     }
 }

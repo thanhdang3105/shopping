@@ -12,7 +12,7 @@
     }
 
     .video_colection{
-        height: 50vh;
+        height: 35vh;
     }
 
     .item_name{
@@ -22,10 +22,16 @@
     .feedback_logo-list{
         height: 50vh;
     }
+    
+    .best_collection-item--img{
+        height: 85%;
+    }
 }
 
 @media (min-width: 768px) and (max-width:1023px) {
-
+    .video_colection{
+        height:35vh;
+    }
 }
 
 @media (max-width:767px) {
@@ -52,5 +58,27 @@
 
     .best_collection-title{
         height: 7vh;
+    }
+}
+
+@media (max-width:375px) { 
+    .main{
+        overflow: hidden;
+    }
+
+    .video_colection{
+        height:34vh;
+    }
+
+    .feedback_logo-list{
+        height: 40vh;
+    }
+
+    .mobile_nav-link{
+        width: 89%;
+    }
+
+    .mobile.nav_item-search{
+        width: 75%;
     }
 }

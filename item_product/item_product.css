@@ -1,6 +1,7 @@
 .body_item{
     margin-top: 10vh;
     padding: 2rem 2rem 0 2rem;
+    overflow-x: hidden;
 }
 
 .item_block{
@@ -10,51 +11,21 @@
 
 .img_item{
     width: 70%;
-    padding: 0 5rem 0 12rem;
+    padding: 0 5rem 0 10rem;
+    position: relative;
 }
 
 .img_item .swiper{
     overflow: unset;
 }
 
+.img_item .mySwiper{
+    overflow: hidden;
+}
+
 .img_item .swiper .img_preview{
     width: 100%;
     height: 100%;
-}
-
-.img_item .swiper .swiper-pagination{
-    display: flex;
-    flex-direction: column;
-    top: 10%;
-    left: -12rem;
-    width: 10rem;
-    height: 80%;
-    overflow:hidden;
-}
-
-.img_item .swiper .swiper-pagination img{
-    width: 100%;
-    min-height: 8rem;
-    border-radius: unset;
-    margin: 0 0 0.5rem 0;
-    border: 1px solid rgba(0,0,0,0.2);
-}
-
-#pagination_up,
-#pagination_down{
-    position:absolute;
-    font-size: 5rem;
-    left: -10rem;
-    line-height:5rem;
-}
-
-#pagination_up{
-    top: -0.5rem;
-}
-
-#pagination_down{
-    bottom: -0.5rem;
-    opacity: 0.2;
 }
 
 .item_infomation{
