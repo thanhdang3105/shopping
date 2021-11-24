@@ -1,4 +1,5 @@
 const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
 
     const desc = `<div class="more_desc" onclick="more_desc()">Xem thêm <i class="angle double down icon"></i></div>
     <div class="item_body-desc">
@@ -90,4 +91,19 @@ const $ = document.querySelector.bind(document)
         $('.control_desc').classList.remove('active')
         $('.item_desc-rate--body').innerHTML = cmt
     }
+
+    var colorss
+
+    Array.from($$('.item_color')).map(item => {
+        item.onclick = () => {
+            $('.item_color.choose').classList.remove('choose')
+            item.classList.add('choose')
+            colorss = item.innerText
+        }
+    })
+
+    $('.add_itemtoCart').onclick = () => {
+        console.log(colorss)
+    }
+
 

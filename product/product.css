@@ -18,6 +18,15 @@
     margin-bottom: 1rem;
 }
 
+.filter_category,
+.body_heading-productNumber{
+    width: 25%;
+}
+
+.body_heading-productNumber {
+    text-align: right;
+}
+
 #category{
     border: 1px solid var(--header-color);
     background-color: var(--header-color);

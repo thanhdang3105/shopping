@@ -19,7 +19,8 @@
     overflow: unset;
 }
 
-.img_item .mySwiper{
+.img_item .mySwiper,
+.img_item .mySwiper2{
     overflow: hidden;
 }
 

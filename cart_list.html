@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./asset/base.css">
+    <link rel="stylesheet" href="./app/header.css">
+    <link rel="stylesheet" href="./app/footer.css">
+    <link rel="stylesheet" href="./cart_list.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="body_cartList">
+        <div class="row">
+            <div class="block_itemCart">
+                <div class="heading_cart heading">Giỏ hàng</div>
+                <ul class="list_itemCart">
+                    <li class="itemCart">
+                        <img src="./asset/img/vans.jpg" alt="Sản phẩm 1" class="itemCart_img">
+                        <div class="itemCart_block-info">
+                                <p class="itemCart_name">Vans Basic</p>
+                                <p class="itemCart_price">200,000đ</p>
+                                <div class="itemCart_block-type">
+                                    <p class="itemCart_color">Đen</p>
+                                    <select name="itemCart_quantity" class="itemCart_quantity">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <i class="times icon"></i>
+                    </li>
+                    <li class="itemCart">
+                        <img src="./asset/img/anh-background-dep-26-1024x576.jpg" alt="Sản phẩm 1" class="itemCart_img">
+                        <div class="itemCart_block-info">
+                                <p class="itemCart_name">Vans Basic</p>
+                                <p class="itemCart_price">200,000đ</p>
+                                <div class="itemCart_block-type">
+                                    <p class="itemCart_color">Đen</p>
+                                    <select name="itemCart_quantity" class="itemCart_quantity">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <i class="times icon"></i>
+                    </li>
+                    <li class="itemCart">
+                        <img src="./asset/img/logo-cac-hang-thoi-trang-noi-tieng-3-1024x1024.jpg" alt="Sản phẩm 1" class="itemCart_img">
+                        <div class="itemCart_block-info">
+                                <p class="itemCart_name">Vans Basic</p>
+                                <p class="itemCart_price">200,000đ</p>
+                                <div class="itemCart_block-type">
+                                    <p class="itemCart_color">Đen</p>
+                                    <select name="itemCart_quantity" class="itemCart_quantity">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <i class="times icon"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="block_bill">
+                <div class="heading_bill heading">Hoá đơn</div>
+                <div class="bill_totalPrice">
+                    <label for="bill_price">Tổng: </label>
+                    <p class="bill_price">600,000đ</p>
+                </div>
+                <button class="bill_payments">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="./core/attach.js" type="module"></script>    
+</body>
+</html>
