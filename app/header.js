@@ -87,6 +87,7 @@ function header(init) {
                                                     <p class="price">200.000Đ</p>
                                                 </div>
                                             </div>
+                                            <i class="times icon"></i>
                                         </li>
                                         <li class="cart_item">
                                             <img src="./asset//img/champion.jpg" alt="" class="cart_item-img">
@@ -99,6 +100,7 @@ function header(init) {
                                                     <p class="price">200.000Đ</p>
                                                 </div>
                                             </div>
+                                            <i class="times icon"></i>
                                         </li>
                                         <li class="cart_item">
                                             <img src="./asset//img/champion.jpg" alt="" class="cart_item-img">
@@ -111,6 +113,7 @@ function header(init) {
                                                     <p class="price">200.000Đ</p>
                                                 </div>
                                             </div>
+                                            <i class="times icon"></i>
                                         </li>
                                         <li class="cart_item">
                                             <img src="./asset//img/champion.jpg" alt="" class="cart_item-img">
@@ -118,38 +121,12 @@ function header(init) {
                                                 <h2 class="cart_item-name">Champion Basic</h2>
                                                 <p class="cart_item-color">Đen</p>
                                                 <div class="cart_item-price">
-                                                    <p class="quantity"><i id="less" class="minus icon"></i><span
-                                                            class="number">1</span><i id="up" class="plus icon"></i></p>
+                                                    <a class="quantity"><i id="less" class="minus icon"></i><span
+                                                            class="number">1</span><i id="up" class="plus icon"></i></a>
                                                     <p class="price">200.000Đ</p>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="cart_item">
-                                            <img src="./asset//img/champion.jpg" alt="" class="cart_item-img">
-                                            <div class="cart_item-info">
-                                                <h2 class="cart_item-name">Champion Basic</h2>
-                                                <p class="cart_item-color">Đen</p>
-                                                <div class="cart_item-price">
-                                                    <p class="quantity"><i id="less" class="minus icon"></i><span
-                                                            class="number">1</span><i id="up" class="plus icon"></i></p>
-                                                    <p class="price">200.000Đ</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="cart_item">
-                                            <img src="./asset//img/champion.jpg" alt="" class="cart_item-img">
-                                            <div class="cart_item-info">
-                                                <h2 class="cart_item-name">Champion Basic Lorem ipsum dolor sit amet
-                                                    consectetur, adipisicing elit. Tempore ab dolorem quaerat distinctio
-                                                    autem quae aperiam repellendus dolores quam! Placeat quod nisi fugit
-                                                    sed pariatur similique ea neque nobis dolores!</h2>
-                                                <p class="cart_item-color">Đen</p>
-                                                <div class="cart_item-price">
-                                                    <p class="quantity"><i id="less" class="minus icon"></i><span
-                                                            class="number">1</span><i id="up" class="plus icon"></i></p>
-                                                    <p class="price">200.000Đ</p>
-                                                </div>
-                                            </div>
+                                            <i class="times icon"></i>
                                         </li>
                                     </div>
                                     <div class="cart_payment">
@@ -158,7 +135,8 @@ function header(init) {
                                             <span class="total_price-number">10.000.000Đ</span>
                                         </div>
                                         <div class="payment_controls">
-                                            <button class="payment">Thanh toán</button>
+                                            <a href="cart_list.html" class="btn Cart_list">Giỏ hàng</a>
+                                            <a href="payments.html" class=" btn payment">Thanh toán</a>
                                         </div>
                                     </div>
                                 </ul>

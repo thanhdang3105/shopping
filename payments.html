@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +12,178 @@
     <link rel="stylesheet" href="./asset/base.css">
     <link rel="stylesheet" href="./app/header.css">
     <link rel="stylesheet" href="./app/footer.css">
+    <link rel="stylesheet" href="./payments/payments.css">
 </head>
+
 <body>
     <div class="header"></div>
+    <div class="body_payments">
+        <div class="row">
+            <form action="" method="post" class="infomation_payments">
+                <div class="block_info-payments">
+                    <img src="./asset/img/puma.jpg" alt="logo" class="logo">
+                    <h1 class="infomation_heading heading">Thông tin giao hàng</h1>
+                    <input type="text" id="input_name" class="input" placeholder="Nhập tên của bạn">
+                    <input type="text" id="input_phone" class="input" placeholder="Nhập số điện thoại của bạn">
+                    <input type="text" id="input_address" class="input" placeholder="Nhập địa chỉ của bạn">
+                    <div class="payment_method">
+                        <h1 class="payment_methods_title">Phương thức thanh toán</h1>
+                    <div class="method_payments">
+                        <input type="radio" name="payment_method" id="cod" class="method" checked>Thanh toán khi nhận
+                        hàng (COD)</input>
+                    </div>
+                    <div class="method_payments note_cod">Nhận hàng - Kiểm tra - Thanh toán</div>
+                    <div class="method_payments">
+                        <input type="radio" name="payment_method" id="banking" class="method">Chuyển khoản qua ngân
+                        hàng</input>
+                    </div>
+                    <div class="method_payments note_banking">Nhận hàng - Kiểm tra - Thanh toán</div>
+                    <div class="method_payments">
+                        <input type="radio" name="payment_method" id="wallet" class="method">Ví MOMO</input>
+                    </div>
+                    </div>
+                    <button class="accept_payments btn" type="submit">Thanh toán</button>
+                </div>
+                <div class="block_cartList">
+                    <ul class="cartList">
+                        <h1 class="heading_cart-name">Sản phẩm</h1>
+                        <div class="list_cart-item">
+                            <li class="cart_item">
+                                <img src="./asset//img/champion.jpg" alt="" class="cart_item-img">
+                                <div class="cart_item-info">
+                                    <h2 class="cart_item-name">Champion Basic</h2>
+                                    <p class="cart_item-color">Đen</p>
+                                    <div class="cart_item-price">
+                                        <a class="quantity"></i><span
+                                                class="number">1</span></a>
+                                        <p class="price">200.000Đ</p>
+                                    </div>
+                                </div>
+                                <i class="times icon"></i>
+                            </li>
+                            <li class="cart_item">
+                                <img src="./asset//img/puma.jpg" alt="" class="cart_item-img">
+                                <div class="cart_item-info">
+                                    <h2 class="cart_item-name">Champion Basic</h2>
+                                    <p class="cart_item-color">Đen</p>
+                                    <div class="cart_item-price">
+                                        <a class="quantity"></i><span
+                                                class="number">1</span></a>
+                                        <p class="price">200.000Đ</p>
+                                    </div>
+                                </div>
+                                <i class="times icon"></i>
+                            </li>
+                            <li class="cart_item">
+                                <img src="./asset//img/logo-urban-monkey-local-brand-viet-nam-streetwear.png" alt="" class="cart_item-img">
+                                <div class="cart_item-info">
+                                    <h2 class="cart_item-name">Champion Basic</h2>
+                                    <p class="cart_item-color">Đen</p>
+                                    <div class="cart_item-price">
+                                        <a class="quantity"></i><span
+                                                class="number">1</a>
+                                        <p class="price">200.000Đ</p>
+                                    </div>
+                                </div>
+                                <i class="times icon"></i>
+                            </li>
+                            <li class="cart_item">
+                                <img src="./asset//img/logo-cac-hang-thoi-trang-noi-tieng-3-1024x1024.jpg" alt="" class="cart_item-img">
+                                <div class="cart_item-info">
+                                    <h2 class="cart_item-name">Champion Basic</h2>
+                                    <p class="cart_item-color">Đen</p>
+                                    <div class="cart_item-price">
+                                        <a class="quantity"></i><span
+                                                class="number">1</span></a>
+                                        <p class="price">200.000Đ</p>
+                                    </div>
+                                </div>
+                                <i class="times icon"></i>
+                            </li>
+                            <li class="cart_item">
+                                <img src="./asset//img/Hình-phong-cảnh-Anime-scaled.jpg" alt="" class="cart_item-img">
+                                <div class="cart_item-info">
+                                    <h2 class="cart_item-name">Champion Basic</h2>
+                                    <p class="cart_item-color">Đen</p>
+                                    <div class="cart_item-price">
+                                        <a class="quantity"></i><span
+                                                class="number">1</span></a>
+                                        <p class="price">200.000Đ</p>
+                                    </div>
+                                </div>
+                                <i class="times icon"></i>
+                            </li>
+                            <li class="cart_item">
+                                <img src="./asset//img/champion.jpg" alt="" class="cart_item-img">
+                                <div class="cart_item-info">
+                                    <h2 class="cart_item-name">Champion Basic</h2>
+                                    <p class="cart_item-color">Đen</p>
+                                    <div class="cart_item-price">
+                                        <a class="quantity"></i><span
+                                                class="number">1</span></a>
+                                        <p class="price">200.000Đ</p>
+                                    </div>
+                                </div>
+                                <i class="times icon"></i>
+                            </li>
+                            <li class="cart_item">
+                                <img src="./asset//img/hinh-nen-may-tinh-win-7-va-win-8-15.jpg" alt="" class="cart_item-img">
+                                <div class="cart_item-info">
+                                    <h2 class="cart_item-name">Champion Basic</h2>
+                                    <p class="cart_item-color">Đen</p>
+                                    <div class="cart_item-price">
+                                        <a class="quantity"></i><span
+                                                class="number">1</span></a>
+                                        <p class="price">200.000Đ</p>
+                                    </div>
+                                </div>
+                                <i class="times icon"></i>
+                            </li>
+                            <li class="cart_item">
+                                <img src="./asset//img/background-dep.jpg" alt="" class="cart_item-img">
+                                <div class="cart_item-info">
+                                    <h2 class="cart_item-name">Champion Basic</h2>
+                                    <p class="cart_item-color">Đen</p>
+                                    <div class="cart_item-price">
+                                        <a class="quantity"></i><span
+                                                class="number">1</span></a>
+                                        <p class="price">200.000Đ</p>
+                                    </div>
+                                </div>
+                                <i class="times icon"></i>
+                            </li>
+                            <li class="cart_item">
+                                <img src="./asset//img/vans.jpg" alt="" class="cart_item-img">
+                                <div class="cart_item-info">
+                                    <h2 class="cart_item-name">Champion Basic</h2>
+                                    <p class="cart_item-color">Đen</p>
+                                    <div class="cart_item-price">
+                                        <a class="quantity"></i><span
+                                                class="number">1</span></a>
+                                        <p class="price">200.000Đ</p>
+                                    </div>
+                                </div>
+                                <i class="times icon"></i>
+                            </li>
+                        </div>
+                        <div class="cart_payment">
+                            <form method="post" action="#" class="block_discount">
+                                <input type="text" class="input discount_code" placeholder="Nhập mã của bạn">
+                                <button type="submit" class="btn check_code">Check</button>
+                            </form>
+                            <div class="total_price">
+                                <h1 class="total">Thành tiền:</h1>
+                                <span class="total_price-number">10.000.000Đ</span>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="footer"></div>
     <script src="./core/attach.js" type="module"></script>
+    <script src="./payments.js"></script>
 </body>
+
 </html>

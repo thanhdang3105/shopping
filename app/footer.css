@@ -192,3 +192,13 @@ p.title_ads{
         padding: 0.5rem 0;
     }
 }
+
+@media (max-width:320px) {
+    .footer_contact{
+        padding: 2rem 2rem 0
+    }
+
+    .mail_contact{
+        margin: 0;
+    }
+}

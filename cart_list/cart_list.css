@@ -7,13 +7,6 @@
     display: flex;
 }
 
-.heading{
-    font-size: 3rem;
-    line-height: 3rem;
-    font-weight: bold;
-    padding: 2rem 0;
-}
-
 .block_itemCart{
     height:90vh;
     overflow: hidden;
@@ -43,6 +36,7 @@
 
 .itemCart_img{
     width: 40%;
+    height: 100%;
 }
 
 .itemCart_block-info{
@@ -81,7 +75,7 @@
     width: 30%;
     height: 30vh;
     padding: 3rem;
-    border: 1px solid rgba(0,0,0, 0.2);
+    border: 1px solid var(--header-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -105,6 +99,7 @@
 .bill_payments{
     padding: 1rem;
     border: none;
+    text-align: center;
     background-color:var(--header-color);
     color: #fff;
     border: 1px solid var(--header-color);
@@ -144,5 +139,39 @@
 @media (min-width:768px) and (max-width:1023px){
     .bill_totalPrice{
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width:767px) {
+    .body_cartList .row{
+        flex-direction: column;
+    }
+
+    .list_itemCart{
+        height: 88%;
+    }
+
+    .heading{
+        font-size: 2rem;
+        line-height: 2rem;
+        padding: 1rem 0;
+    }
+
+    .itemCart_name,
+    .itemCart_price,
+    .itemCart .times.icon{
+        font-size: 1.5rem;
+    }
+
+    .block_itemCart,
+    .block_bill{
+        width: 100%;
+    }
+
+    .block_itemCart{
+        height: 60vh;
+        border: 1px solid var(--header-color);
+        padding: 0 1rem 1rem;
+        border-bottom: none;
     }
 }

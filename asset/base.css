@@ -17,11 +17,35 @@ html {
     background-color: white;
 }
 
+.btn{
+    padding: 0.8rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn:hover{
+    background-color: var(--header-color);
+    color: white;
+}
+
 .row{
     width:85%;
     margin: 0 auto;
     height: 100%;
 }
+
+.heading{
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
 :root{
     --header-color: #659DBD;
     --text-hover: #FBEEC1;
