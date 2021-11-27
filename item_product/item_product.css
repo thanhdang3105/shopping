@@ -29,6 +29,10 @@
     height: 100%;
 }
 
+.img_item .mySwiper2 .img_preview{
+    cursor: pointer;
+}
+
 .item_infomation{
     width: 30%;
     padding: 2rem 0 0 0;
@@ -78,6 +82,7 @@
     border-radius: 2px;
     margin: 0;
     margin-right: 0.5rem;
+    cursor: pointer;
 }
 
 .item_color:hover{

@@ -1,6 +1,7 @@
 /* ======================================== slider-banner=========================== */
 .main{
     overflow-x: hidden;
+    overflow: hidden;
 }
 
 .header{
